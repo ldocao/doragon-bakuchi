@@ -2,7 +2,6 @@ require 'spec_helper'
 
 RSpec.describe DoragonBakuchi::Game do
   it 'return expected result with 666 dices' do
-    skip
     expected = 
       "[666] Doragon-en ! Vous remportez 19 points"
 
@@ -10,7 +9,6 @@ RSpec.describe DoragonBakuchi::Game do
   end
 
   it 'return expected result with 555 dices' do
-    skip
     expected = 
       "[555] Doragon-en ! Vous remportez 15 points"
 
@@ -18,7 +16,6 @@ RSpec.describe DoragonBakuchi::Game do
   end
 
   it 'return expected result with 444 dices' do
-    skip
     expected = 
       "[444] Doragon-en ! Vous remportez 13 points"
 
@@ -26,7 +23,6 @@ RSpec.describe DoragonBakuchi::Game do
   end
 
   it 'return expected result with 333 dices' do
-    skip
     expected = 
       "[333] Doragon-en ! Vous remportez 9 points"
 
@@ -34,7 +30,6 @@ RSpec.describe DoragonBakuchi::Game do
   end
 
   it 'return expected result with 222 dices' do
-    skip
     expected = 
       "[222] Doragon-en ! Vous remportez 7 points"
     
@@ -42,7 +37,6 @@ RSpec.describe DoragonBakuchi::Game do
   end
 
   it 'return expected result with 111 dices' do
-    skip
     expected = 
       "[111] Doragon-en ! Vous remportez 3 points"
 
@@ -50,8 +44,7 @@ RSpec.describe DoragonBakuchi::Game do
   end
 
   it 'return expected result with Sakana dices' do
-    skip
-    dices = [1..6]
+    dices = [1,2,3,4,5,6]
     pair  = dices.sample
     rest  = dices - [pair]
     other = rest.sample
@@ -64,7 +57,6 @@ RSpec.describe DoragonBakuchi::Game do
   end
 
   it 'return expected result with Tokage dices' do
-    skip
     expected = 
       "[134] Tokage... Vous perdez 5 points"
 
